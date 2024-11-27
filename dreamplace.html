@@ -1,93 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <title>Allisya's Dream Place</title>
-</head>
-<body> 
-<style>
-        body {
-            background-color: #e9d5d1; 
-        }
-
-body {
-            background-color: #e9d5d1; 
-        }
-
-        /* Menu styling with border */
-        table {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        table td {
-            border: 2px solid #dbc4c0; 
-            text-align: center;
-            background-color: #ffffff; 
-        }
-
-        table a {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-
-        table a:hover {
-            background-color: #dbc4c0; 
-            color: black;
-        }
-
-/* Footer */
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #dbc4c0;
-            color: black;
-            font-weight: bold;
-
-    </style>
+    <title>Allisya's Dream Place</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
+<style>
+    body {
+        background-color: #e9d5d1;
+        font-family: "Times New Roman", serif; 
+    }
 
-    <!-- Menu Table -->
-    <table>
-        <tr>
-            <td><a href="index.html">HOME</a></td>
-            <td><a href="biodata.html">BIODATA</a></td>
-            <td><a href="experience.html">EXPERIENCE</a></td>
-            <td><a href="education.html">EDUCATION</a></td>
-            <td><a href="family.html">FAMILY</a></td>
-            <td><a href="gallery.html">GALLERY</a></td>
-            <td><a href="dreamplace.html">DREAM PLACE</a></td>
-        </tr>
-    </table>
-    </style>
-</head>
+    /* Menu styling with border */
+    table {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
+    table td {
+        border: 2px solid #dbc4c0;
+        text-align: center;
+        background-color: #ffffff;
+    }
 
+    table a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-family: "Times New Roman",  serif;
+    }
 
-      <center>
-              <h1> MY DREAM PLACE WISHLIST</h1>
-<br><hr>
+    table a:hover {
+        background-color: #dbc4c0;
+        color: black;
+    }
 
-              <h2>KASHMIR</h2>
-              <img src="img/thajiwas_glacier_in_sonmarg_7277.webp" alt="kashmir view" width="1000" height="400">
-              <p>Description: Kashmir, often referred to as "Paradise on Earth," is known for its breathtaking landscapes, snow-capped mountains, and lush valleys.</p>
+    /* Footer */
+    footer {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #dbc4c0;
+        color: black;
+        font-weight: bold;
+        font-family: "Times New Roman", serif; 
+    }
+</style>
 
-              <h2>DUBAI</h2>
-              <img src="img/Taj_Mahal_(Edited).jpeg" alt="dubai view" width="1000" height="400">
-              <p>Description: The Taj Mahal stands majestically on the Yamuna River’s banks, glowing in white marble. Its symmetrical gardens, reflecting pools, and intricate carvings create a breathtaking view of timeless beauty.
-              
-              <h2>SINGAPORE</h2>
-              <img src="img/9500b286-lm-4440-169fe2cc144.jpg" width="1000" height="400">
-              <p>Description: Singapore is a vibrant city-state with a mix of modernity and tradition. It is known for its clean streets, diverse cultures, lush greenery, and a thriving economy.</p>
+<body>
 
-      </center>
+<!-- Menu Table -->
+<table>
+    <tr>
+        <td><a href="index.html">HOME</a></td>
+        <td><a href="biodata.html">BIODATA</a></td>
+        <td><a href="experience.html">EXPERIENCE</a></td>
+        <td><a href="education.html">EDUCATION</a></td>
+        <td><a href="family.html">FAMILY</a></td>
+        <td><a href="gallery.html">GALLERY</a></td>
+        <td><a href="dreamplace.html">DREAM PLACE</a></td>
+    </tr>
+</table>
+
+<center>
+    <h1> MY DREAM PLACE WISHLIST</h1>
+    <hr>
+
+    <h2>KASHMIR</h2>
+    <div class="w3-content w3-display-container" style="max-width:1000px">
+        <img class="mySlides kashmirSlides" src="img/thajiwas_glacier_in_sonmarg_7277.webp" style="width:100%">
+        <img class="mySlides kashmirSlides" src="img/kashmir.webp" style="width:100%">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+            <button class="w3-button w3-black w3-hover-red" onclick="plusDivs(-1, 'kashmirSlides')">❮ Prev</button>
+            <button class="w3-button w3-black w3-hover-red" onclick="plusDivs(1, 'kashmirSlides')">Next ❯</button>
+        </div>
+    </div>
+    <p>Description: Kashmir, often referred to as "Paradise on Earth," is known for its breathtaking landscapes, snow-capped mountains, and lush valleys.</p>
+
+    <h2>TAJ MAHAL</h2>
+    <div class="w3-content w3-display-container" style="max-width:1000px">
+        <img class="mySlides tajSlides" src="img/Taj_Mahal_(Edited).jpeg" style="width:100%">
+        <img class="mySlides tajSlides" src="img/tajmahalcantik.jpeg" style="width:100%">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+            <button class="w3-button w3-black w3-hover-red" onclick="plusDivs(-1, 'tajSlides')">❮ Prev</button>
+            <button class="w3-button w3-black w3-hover-red" onclick="plusDivs(1, 'tajSlides')">Next ❯</button>
+        </div>
+    </div>
+    <p>Description: The Taj Mahal stands majestically on the Yamuna River’s banks, glowing in white marble. Its symmetrical gardens, reflecting pools, and intricate carvings create a breathtaking view of timeless beauty.</p>
+
+    <h2>SINGAPORE</h2>
+    <div class="w3-content w3-display-container" style="max-width:1000px">
+        <img class="mySlides singaporeSlides" src="img/9500b286-lm-4440-169fe2cc144.jpg" style="width:100%">
+        <img class="mySlides singaporeSlides" src="img/singaporeview.jpg" style="width:100%">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+            <button class="w3-button w3-black w3-hover-red" onclick="plusDivs(-1, 'singaporeSlides')">❮ Prev</button>
+            <button class="w3-button w3-black w3-hover-red" onclick="plusDivs(1, 'singaporeSlides')">Next ❯</button>
+        </div>
+    </div>
+    <p>Description: Singapore is a vibrant city-state with a mix of modernity and tradition. It is known for its clean streets, diverse cultures, lush greenery, and a thriving economy.</p>
+</center>
 
 <center>
 <footer>&copy; IMD318 ASSIGNMENT 2024</footer>
 </center>
+
+<script>
+    // Function for manual slideshow
+    function plusDivs(n, slideClass) {
+        let slides = document.getElementsByClassName(slideClass);
+        let currentIndex = 0;
+        for (let i = 0; i < slides.length; i++) {
+            if (slides[i].style.display === "block" || slides[i].style.display === "") {
+                currentIndex = i;
+            }
+            slides[i].style.display = "none";
+        }
+        let nextIndex = (currentIndex + n + slides.length) % slides.length;
+        slides[nextIndex].style.display = "block";
+    }
+
+    // Initialize slides to show the first image
+    window.onload = function() {
+        let categories = ['kashmirSlides', 'tajSlides', 'singaporeSlides'];
+        categories.forEach(category => {
+            let slides = document.getElementsByClassName(category);
+            if (slides.length > 0) {
+                slides[0].style.display = "block";
+            }
+        });
+    };
+</script>
 
 </body>
 </html>
